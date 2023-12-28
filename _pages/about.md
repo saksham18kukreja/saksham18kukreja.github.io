@@ -6,7 +6,7 @@ subtitle: Robotics Grad student
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_5385.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Robotics Institute</p>
