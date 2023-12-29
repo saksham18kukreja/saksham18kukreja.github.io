@@ -4,7 +4,7 @@ title: Real Time Path Planning and Obstacle Avoidance of Quadcopter in 3D Space
 description: Autonomous drone to avoid static obstacles
 img: /assets/img/obstacle_avoidance_drone(1).gif
 importance: 4
-category: work
+category: fun
 related_publications: 
 redirect: https://github.com/saksham18kukreja/Autonomous-Drone
 ---
