@@ -8,8 +8,6 @@ category: work
 related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-# Real Time Path Planning and Obstacle Avoidance in 3D Space
-
 In these past few years, Unmanned Aerial Vehicles (UAVs) have undergone tremendous development and acquired fast-growing popularity worldwide. UAVs applications are not restricted to military and defence: the civilian UAVs market covers a wide scope of domains, for example, traffic surveillance, disaster management, infrastructure inspection, law enforcement, and vegetation monitoring etc. With such vast applications which require split second decisions to be made in real time it is important that the UAV flies without any human intervention and relies on the onboard sensors and computers to work. In UAV flight, obstacle avoidance thus becomes important and path planning must be taken care of in real time to avoid static as well as dynamic obstacles.
 
 How the code works 
