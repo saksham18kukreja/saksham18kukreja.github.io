@@ -1,81 +1,35 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Real Time Path Planning and Obstacle Avoidance of Quadcopter in 3D Space
+description: Autonomous drone to avoid static obstacles
 img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Real Time Path Planning and Obstacle Avoidance in 3D Space
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In these past few years, Unmanned Aerial Vehicles (UAVs) have undergone tremendous development and acquired fast-growing popularity worldwide. UAVs applications are not restricted to military and defence: the civilian UAVs market covers a wide scope of domains, for example, traffic surveillance, disaster management, infrastructure inspection, law enforcement, and vegetation monitoring etc. With such vast applications which require split second decisions to be made in real time it is important that the UAV flies without any human intervention and relies on the onboard sensors and computers to work. In UAV flight, obstacle avoidance thus becomes important and path planning must be taken care of in real time to avoid static as well as dynamic obstacles.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+How the code works 
+1. The drone detects the obstacles position using a stereo camera
+2. The obstacles position is used to generate a local map
+3. An obstacle free path is found around the obstacle avoiding it succesfully in real time
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The path generation takes place using RRT in less than 1 second.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+## Work Pending 
+1. Convert the code to CPP for faster detection and path generation
+2. Rigourous testing on hardware to improve the pipeline
+3. Use voxel grids to reduce the computation load.
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+In the video, the drone detects the obstacle visualized by the point cloud(top left)
+It generates a new path around the obstacle seen at the bottom left
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+## Tools used
+1. Python
+2. PX4 with Mavros and ROS
+3. Gazebo for visualization
+4. Point cloud library
