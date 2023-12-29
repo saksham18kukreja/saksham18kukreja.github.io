@@ -2,7 +2,7 @@
 layout: page
 title: Real Time Path Planning and Obstacle Avoidance of Quadcopter in 3D Space
 description: Autonomous drone to avoid static obstacles
-img: obstacle_avoidance_drone(1).gif
+img: /assets/img/obstacle_avoidance_drone(1).gif
 importance: 4
 category: work
 related_publications: 
