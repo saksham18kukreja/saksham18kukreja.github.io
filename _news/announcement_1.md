@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from Punjab Engineering College, Chandigarh with a Bachelor's of Technology in Aerospace Engineering.
+Graduated from Punjab Engineering College, Chandigarh with a Bachelor's of Engineering in Aerospace Engineering.
