@@ -17,4 +17,6 @@ nav_order: 6
 ## Spring 2024
 1. Robotics Business
 2. Robot Autonomy
-3. Course Project
+3. Visual Learning and Recognition
+4. MRSD Capstone Project
+
