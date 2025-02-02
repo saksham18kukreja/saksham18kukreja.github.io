@@ -20,3 +20,12 @@ nav_order: 6
 3. Visual Learning and Recognition
 4. MRSD Capstone Project
 
+## Fall 2024
+1. MRSD Capstone Project
+2. Deep Reinforcement Learning and Controls
+3. Advanced Robotics Business
+4. SLAM (Simultaneous Localization and Mapping)
+
+## Spring 2025
+1. Embodied AI Safety
+2. Multi-Agent Path Finding 
